@@ -3,3 +3,21 @@
     bottom: 2rem;
     right: 2rem;
 }
+
+ul {
+    padding-left: 0;
+    text-indent: -12px;
+    
+}
+
+li.about:before {
+    
+    content: "-";
+    padding-right: 5px;
+    color: #9FA6B2;
+    
+  }
+
+ul li {
+    list-style: none;
+}
