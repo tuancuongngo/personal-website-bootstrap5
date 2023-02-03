@@ -64,7 +64,7 @@
                                         <li class="about text-muted">Node.js</li>
                                     </ul>
                                 </div>
-                                <div class="row mx-5">
+                                <div class="row mx-4">
                                     <ul class="about">
                                         <li class="about text-muted">Express</li>
                                         <li class="about text-muted">Bootstrap</li>
@@ -253,9 +253,9 @@
                     <div class="col-lg-12 d-flex align-items-center flex-md-row flex-column justify-content-center">
                         <a href="#" class="btn btn-danger me-md-3 px-3">Download Resume</a>
                         <div class="social-links mt-md-0 mt-2">
-                            <a href="#" class="text-dark me-2"><i class="fab fa-linkedin-in text-danger"></i></a>
-                            <a href="#" class="text-dark me-2"><i class="fab fa-github text-danger"></i></a>
-                            <a href="#" class="text-dark"><i class="fa fa-envelope text-danger"></i></a>
+                            <a href="https://www.linkedin.com/in/tuan-cuong-ngo-82a171182/" target="_blank" class="text-dark me-2"><i class="fab fa-linkedin-in text-danger"></i></a>
+                            <a href="https://github.com/tuancuongngo" target="_blank" class="text-dark me-2"><i class="fab fa-github text-danger"></i></a>
+                            <a href="mailto: ngoct@vt.edu" class="text-dark"><i class="fa fa-envelope text-danger"></i></a>
                         </div>
                     </div>
                 </div>
@@ -319,10 +319,10 @@
                                 <h4 class="card-title text-capitalize text-center text-danger mb-3">Personal Portfolio</h4>
                                 <ul class="about">
                                     <li class="about text-muted fw-light mb-2">Developed website using mainly HTML and Bootstrap, with minimal CSS and JavaScript, to ensure a professional and simple design.</li>
-                                    <li class="about text-muted fw-light mb-2">Utilized responsive design to optimize site for viewing across all devices and platforms, from desktops to smartphones.
+                                    <li class="about text-muted fw-light mb-2">Utilized responsive design to optimize site for viewing across all devices and platforms, from desktops to smartphones.</li>
                                     <li class="about text-muted fw-light mb-2">Implemented a JavaScript-powered email form as a section on the website, allowing visitors to send messages directly from the site.</li>
                                 </ul>
-                                <p class="text-center"><a href="#home" class="btn btn-danger">Live Demo</a></p>
+                                <p class="text-center"><a href="http://ngoct.s3-website-us-east-1.amazonaws.com/" class="btn btn-danger">Live Demo</a></p>
                                 <div class="text-center">
                                     <a href="https://github.com/tuancuongngo/personal-website-bootstrap5" target="_blank" class="text-dark me-2"><i class="fab fa-github fa-xl text-danger"></i></a>
                                 </div>
@@ -376,25 +376,26 @@
                     </div>
                     <div class="col-md-7">
                         <div class="contact-form">
-                            <form>
+                            <form action="https://formsubmit.co/ngoct@vt.edu" method="POST">
                                 <div class="row">
                                     <div class="col-lg-6 mb-4">
-                                        <input type="text" placeholder="Your Name" class="form-control form-control-lg fs-6 border-0 shadow-sm" />
+                                        <input type="text" name="name" placeholder="Your Name" class="form-control form-control-lg fs-6 border-0 shadow-sm" required/>
                                     </div>
                                     <div class="col-lg-6 mb-4">
-                                        <input type="text" placeholder="Your Email" class="form-control form-control-lg fs-6 border-0 shadow-sm" />
+                                        <input type="email" name="email" placeholder="Your Email" class="form-control form-control-lg fs-6 border-0 shadow-sm" required/>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-12 mb-4">
-                                        <input type="text" placeholder="Subject" class="form-control form-control-lg fs-6 border-0 shadow-sm" />
+                                        <input type="text" name="subject" placeholder="Subject" class="form-control form-control-lg fs-6 border-0 shadow-sm" required/>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col mb-4">
-                                        <textarea type="text" rows="5" placeholder="Your Message" class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
+                                        <textarea type="text" name="message" rows="5" placeholder="Your Message" class="form-control form-control-lg fs-6 border-0 shadow-sm" required></textarea>
                                     </div>
                                 </div>
+                                <input type="hidden" name="_captcha" value="false">
                                 <div class="row">
                                     <div class="col-lg-12 d-flex justify-content-center justify-content-md-start">
                                         <button type="submit" class="btn btn-danger px-3">Send Message</button>
