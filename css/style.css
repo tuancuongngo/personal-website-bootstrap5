@@ -9,17 +9,30 @@ ul.about {
     text-indent: -12px;
 }
 
-
 li.about:before {
     content: "-";
     padding-right: 5px;
-    color: #9FA6B2;
-    
+    color: #9fa6b2;
 }
-
 
 ul li {
     list-style: none;
+}
+
+.fade-in {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 3.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* .custom-mark {
